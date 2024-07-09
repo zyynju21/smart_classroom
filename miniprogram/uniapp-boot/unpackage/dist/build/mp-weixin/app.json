@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/login/reg",
+    "pages/index/index",
+    "pages/basics/detail",
+    "pages/library/notice",
+    "pages/about/collect",
+    "pages/about/about",
+    "pages/about/order",
+    "pages/about/set"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {
+    "basics": "/pages/basics/basics",
+    "library": "/pages/library/library",
+    "books": "/pages/books/books",
+    "about": "/pages/about/about",
+    "cu-custom": "/plugin/colorui/components/cu-custom",
+    "divider": "/components/common/divider"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "uni-fav": "/uni_modules/uni-fav/components/uni-fav/uni-fav"
+  }
+}

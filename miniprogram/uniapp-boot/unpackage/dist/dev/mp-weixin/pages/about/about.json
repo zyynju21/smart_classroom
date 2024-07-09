@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "uni-drawer": "/uni_modules/uni-drawer/components/uni-drawer/uni-drawer"
+  }
+}

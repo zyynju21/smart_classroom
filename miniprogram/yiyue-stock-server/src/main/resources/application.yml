@@ -1,0 +1,39 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: yiyue-server
+  profiles:
+      active: dev
+  servlet:
+    multipart:
+      enabled: true
+      max-request-size: 10MB
+      max-file-size: 10MB
+      file-size-threshold: 10MB
+  datasource:
+    druid:
+      db-type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/wx_seat?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: skx20021107
+      max-wait: 5000
+      initial-size: 5
+      min-idle: 5
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 'x'
+      max-pool-prepared-statement-per-connection-size: 20
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+authorization:
+  key-name: Access_Token
+
+upload:
+  file-path: upload
+
+
+
